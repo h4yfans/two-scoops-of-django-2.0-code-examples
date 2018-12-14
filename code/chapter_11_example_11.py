@@ -49,7 +49,6 @@ class IceCreamStoreUpdateForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         # Call the original __init__ method before assigning
         # field overloads
-        super().__init__(*args,
-                            **kwargs)
+        super().__init__(*args, **kwargs)
         self.fields['phone'].required = True
         self.fields['description'].required = True
